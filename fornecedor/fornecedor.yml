@@ -1,0 +1,14 @@
+Spring:  
+   autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+   datasource: 
+     url: jdbc:mysql://localhost:3306/fornecedor?useTimezone=true&serverTimezone=America/Sao_Paulo
+     username: root  
+     password: root
+     driver-class-name: com.mysql.jdbc.Driver
+   jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    generate-ddl: true
+    hibernate:
+     ddl-auto: update
+ 
